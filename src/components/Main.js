@@ -11,11 +11,11 @@ const styles = {
 function Main() {
     return (
         <div style={styles.buttons}>
-            <div className="buttonHolder" >
+            {/* <div className="buttonHolder" >
                 <button className="buttons">Passwords</button>
                 <button className="buttons">Documents</button>
                 <button className="buttons">Web Site's</button>
-            </div>
+            </div> */}
         </div>
     );
 

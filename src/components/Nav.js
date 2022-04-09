@@ -3,41 +3,34 @@ import '../styles/style.css';
 import logo from '../images/OURganizer.jpg';
 
 const styles = {
-    nav: {
-        backgroundColor: "#505254",
+    button: {
+        display: "flex",
+        justifyContent: "center",
+
+    },
+    buttonHolder: {
         display: "flex",
         justifyContent: "Center",
-        height: "300px"
-    },
-    text: {
-        position: "absolute",
-        fontSize: "20px",
-        top: "0",
-        right: "0",
-        padding: "15px",
-        color: "black",
-    },
-    dashboard: {
-        position: "absolute",
-        fontSize: "20px",
-        top: "0",
-        left: "0",
-        padding: "15px",
-
+        alignItems: "center"
     }
+
 }
 
 function Nav() {
 
     return (
         <div>
-            <div className="nav" style={styles.nav}>
+            <div className="navitron" style={styles.nav}>
                 <img className="logo" src={logo}></img>
-                <a style={styles.text}>Login</a>
-                <a style={styles.dashboard}>Dashboard</a>
+                {/* <a style={styles.text}>Login</a>
+                    <a style={styles.dashboard}>Dashboard</a> */}
+                <div style={styles.buttonHolder}>
+                    <button className="buttons logo" style={styles.button}>Login</button>
+                    <button className="buttons logo" style={styles.button}>Sign-Up</button>
+                </div>
             </div>
-        </div>
 
+        </div>
     );
 
 }
