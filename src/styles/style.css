@@ -1,13 +1,13 @@
 body {
-    background-color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .navitron {
-    background-color: #505254;
-    display: block;
+    display: flex;
     flex-direction: row;
     justify-content: Center;
-    height: 650px;
 }
 
 
@@ -16,12 +16,12 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 0px;
-    width: 550px;
+
 }
 
 .buttons {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     justify-content: center;
     padding: 0.46em 1.6em;
     border: 0.1em solid #000000;
@@ -29,12 +29,12 @@ body {
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
     color: #000000;
     text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
-    background-color: #1F89F2;
+    background-color: #008080;
     text-align: center;
     transition: all 0.15s;
 }
@@ -45,8 +45,73 @@ body {
     border-color: #FFFFFF;
 }
 
-@media only screen and (min-width: 600px) {
+
+
+/* for each logo media query a buttons one comes with */
+@media only screen and (max-width: 1700px) {
+    .logo {
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .buttons {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .logo {
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .buttons {
+        height: 175px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
     .navitron {
-        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .buttons {
+        align-items: center;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .logo {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .buttons {
+        display: block;
+        align-items: center;
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .buttonHolder {
+        display: block;
+        justify-content: center;
+        align-content: center;
+
     }
 }
